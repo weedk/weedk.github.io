@@ -1,0 +1,177 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body,h1,h2,ul,p,figure{
+	margin:0;
+	padding:0;
+}
+.ul-style{
+	width:650px;
+	height:72px;
+	list-style:outside none none;  /*	去掉ul前的圆点*/
+	float:right;
+	
+}
+a{
+	text-decoration:none;
+}
+.header{
+	width:100%;
+	min-width:1263px; /*在width:100%时，一般要设置最小宽度，表示在任何时候都是全屏显示，即有滚动条时，拖到滚动条也能显示完整。*/
+	height:72px;
+	background-color:#333;
+	position:relative;
+	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+	z-index: 999;
+}
+.div1-style{
+	width:1000px;
+	height:72px;
+/*	background-color:#333;
+*/	margin:0 auto;
+}
+.div1-style > h1{
+	width:138px;
+	height:72px;
+	text-indent:-999px;
+	background-image:url(../img/logo.jpg);
+	float:left;
+}
+.ul-style > li{
+	width:120px;
+	text-align:center;
+	float:left;
+	line-height:72px;
+	color:#eee;
+}
+.ul-style a{  /*或者.ul-style > li > a   表示逐级向下，但是.ul-style > a 表示.ul-style下的a元素，但是该项目找不到，*/
+	color:#eee;
+	display:block;
+}
+.ul-style  a:hover{  /*表示鼠标点击是的样式*/
+	background-color:#000;
+}
+.active > a{
+	background-color:#000;
+}
+
+#search{
+	width:100%;
+	min-width:1263px;
+	height:300px;
+	background:url(../img/search.jpg) no-repeat center;
+	position:relative;   /*相对位置设置*/
+	background-color:#191313;
+}
+.center{
+	width:560px;
+	height:60px;
+	background-color:#000;
+	position:absolute;  /*绝对位置设置*/
+	top:50%;
+	left:50%;
+	margin:-30px 0 0 -280px;
+	border-radius:10px;
+}
+
+.input{
+	width:400px;
+	height:48px;
+	background-color:#eee;
+	position:absolute;  /*绝对位置设置*/
+	top:50%;
+	left:50%;
+	margin:-27px 0 0 -277px;
+	border-radius:10px;
+	padding:0 10px;
+	margin:1px solid #666;
+	font-size:24px;
+	padding:0 10px;
+	outline:none;
+}
+	
+.button{
+	width:120px;
+	height:48px;
+	background-color:#eee;
+	position:absolute;  /*绝对位置设置*/
+	top:50%;
+	left:50%;
+	margin:-24px 0 0 160px;
+	border-radius:10px;
+	padding:0 10px;
+	border:1px solid #666;
+	font-size:24px;
+	font-weight:bold;
+	cursor:pointer;
+}
+#tour{
+	width:1263px;
+	height:1200px;
+	background-color:#fff;
+	margin:30px auto;
+	text-align:center;
+}
+.center2{
+	text-align:center;
+}
+.center2 h2{
+	font-size:45px;
+	letter-spacing:2px;
+	color:#666;
+	margin:10px 0;
+}
+.center2 p{
+	color:#666;
+}
+#tour figure{
+	width:300px;
+	border:1px solid #ddd;
+	display:inline-block;
+	padding:4px;
+	border-radius:4px;
+	margin:15px 12px;
+	text-align:left;
+	position:relative;
+	
+	/*position:relative;  相对布局与绝对布局设置位置*/
+}
+#tour figcaption{
+	color:#777;
+	font-size:13px;
+	line-height:1.5;
+	letter-spacing:1px;
+	padding:7px 0 3px 0;
+}
+#tour .small{
+	float:right;
+	color:#999;
+	font-size:12px;
+	font-style:italic;
+	
+	/*position:absolute;
+	bottom:5px;  相对布局与绝对布局设置位置
+	right:5px;*/
+	position:relative;
+	top:3px;
+	right:4px;
+}
+#tour .price{
+	color:#C00;
+	
+}
+#tour strong{
+	font-size:20px;
+	letter-spacing:1px;
+}
+#tour .top{
+	width:90px;
+	height:25px;
+	background-color:#0C0;
+	color:#fff;
+	text-align:center;
+	line-height:25px;
+	position:absolute;
+	top:4px;
+	left:4px;
+}
